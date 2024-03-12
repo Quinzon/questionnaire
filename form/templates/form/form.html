@@ -1,0 +1,22 @@
+{% extends 'form/index.html' %}
+{% load form_tags %}
+
+
+{% block content %}
+    {% if form %}
+        <div class="form">
+            <div class="form__header">
+                <h1>
+                    {{ form.name }}
+                </h1>
+                <h3>
+                    {{ form.description }}
+                </h3>
+            </div>
+
+            <div class="form__wrapper">
+                {% include 'form/question.html' with question=form.struct.questions.0 %}
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

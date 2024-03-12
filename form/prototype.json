@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "name": "Ваша почта",
+      "questions": [
+        {
+          "name": "Почта",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Тип вашего заведения",
+      "questions": [
+        {
+          "name": "Бар",
+          "type": "checkbox",
+          "questions": [
+            {
+              "name": "Что ещё есть в вашем баре?",
+              "questions": [
+                {
+                    "name": "Библиотека",
+                    "type": "checkbox"
+                },
+                {
+                  "name": "Кухня",
+                  "type": "checkbox",
+                  "questions": [
+                    {
+                      "name": "Какая у вас кухня?",
+                      "questions": [
+                        {
+                          "name": "Православная",
+                          "type": "checkbox"
+                        },
+                        {
+                          "name": "Сухарики сами делаем",
+                          "type": "checkbox"
+                        },
+                        {
+                          "name": "Другое",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                "name": "Бильярд",
+                  "type": "checkbox",
+                  "questions": [
+                    {
+                      "name": "Что там по бильярду?",
+                      "questions": [
+                        {
+                          "name": "Сколько столов?",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Караоке",
+                  "type": "checkbox",
+                  "questions": [
+                    {
+                      "name": "Что там по Караоке?",
+                      "questions": [
+                        {
+                          "name": "Сколько комнат?",
+                          "type": "number"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Пиво какое наливаете?",
+              "questions": [
+                {
+                  "name": "У нас разное есть: Портер, Стаут, Пилзер, ИПА, АПА и тд.",
+                  "type": "radio"
+                },
+                {
+                  "name": "У нас целых два вида: светлое и темное",
+                  "type": "radio"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ресторан",
+          "type": "checkbox"
+        }
+      ]
+      },
+    {
+      "name": "Ваш телефон",
+      "questions": [
+        {
+          "name": "Телефон",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

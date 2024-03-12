@@ -1,0 +1,17 @@
+{% for question in questions %}
+    <div class="question">
+        <h2 class="question__name">{{ question.name }}</h2>
+        {% if question.questions %}
+            {% for quest in question.questions %}
+                <span>{{ quest.name }}</span> - <span>{{ quest.answer }}</span><br>
+            {% endfor %}
+        {% endif %}
+        {% if question.questions %}
+            {% for quest in question.questions %}
+                {% if quest.answer and quest.questions %}
+                    {% include 'form/result.html' with questions=quest.questions %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endfor %}

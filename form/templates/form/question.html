@@ -1,0 +1,26 @@
+<div class='question' data-path="{{ path }}" data-id="{{ application_id }}">
+    {% if not question.type %}
+        <h2 class='question__name' id='{{ question.name }}'>{{ question.name }}</h2>
+        {% if question.questions %}
+            <div class="question__answer">
+                {% for quest in question.questions %}
+                    <input type='{{ quest.type }}' id='{{ quest.name }}' name="name">
+                    <label>{{ quest.name }}</label>
+                    <br>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% else %}
+        <h2 class='question__name' id='{{ question.name }}'>{{ question.name }}</h2>
+        <label class="question__answer">
+            <input type='{{ quest.type }}' id='{{ question.name }}'>{{ quest.name }}
+        </label>
+    {% endif %}
+    <div class="question__button-success">
+        {% if application_complete %}
+            <button id="button-complete">Завершить</button>
+        {% else %}
+            <button id="button-next">Продолжить</button>
+        {% endif %}
+    </div>
+</div>

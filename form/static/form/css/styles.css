@@ -1,0 +1,15 @@
+.form {
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    max-width: 50vw;
+}
+
+.form__wrapper {
+    text-align: start;
+    width: 400px;
+}
+
+.question__button-success {
+    margin-top: 10px;
+}
